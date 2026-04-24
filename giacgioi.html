@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nhân viên Yutang</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        background: #f5f5f5;
+        text-align: center;
+      }
+
+      h1 {
+        color: #8b0000;
+      }
+      h2 {
+        color: red;
+      }
+      .name {
+        cursor: pointer;
+        color: blue;
+        margin: 10px;
+        display: block;
+        font-size: 18px;
+      }
+
+      img {
+        display: none;
+        margin: 10px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/">yutang</a>
+    <a href="giacgioi.html">giặc giời</a>
+    <h1>Giặc giời</h1>
+
+    <!-- Quản lý -->
+    <h2>Cầm đầu</h2>
+    <span class="name" onclick="toggleImage('ql')">Hát Hệ</span>
+    <img id="ql" src="img/hhue.jpg" />
+    <span class="name" onclick="toggleImage('ql2')">Quýt Lắc</span>
+    <img id="ql2" src="img/alac.jpg" />
+
+    <!-- Nhân viên -->
+    <h2>Lính</h2>
+
+    <span class="name" onclick="toggleImage('nv1')">An Phong</span>
+    <img id="nv1" src="/img/anphong.jpg" />
+
+    <span class="name" onclick="toggleImage('nv2')">Lâm Beo</span>
+    <img id="nv2" src="/img/lambeo.jpg" />
+
+    <span class="name" onclick="toggleImage('nv3')">Đinh Thu Thảo</span>
+    <img id="nv3" src="/img/dinhthithanhthao.jpg" />
+
+    <span class="name" onclick="toggleImage('nv4')">Thu Hoài Doãn</span>
+    <img id="nv4" src="/img/thuhoai.jpg" />
+
+    <span class="name" onclick="toggleImage('nv5')">Chí Thắng</span>
+    <img id="nv5" src="img/chithang.jpg" />
+
+    <span class="name" onclick="toggleImage('nv6')"
+      >Thủy Giang Phan Nguyễn</span
+    >
+    <img id="nv6" src="img/thuygiang.jpg" />
+
+    <span class="name" onclick="toggleImage('nv7')">bé Xuân Mai</span>
+    <img id="nv7" src="img/kien.jpg" />
+    <span class="name" onclick="toggleImage('nv8')">Linh Đỗ</span>
+    <img id="nv7" src="img/linhsex.jpg" />
+
+    <script>
+      function toggleImage(id) {
+        var img = document.getElementById(id);
+        if (img.style.display === "none") {
+          img.style.display = "block";
+        } else {
+          img.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
